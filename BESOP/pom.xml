@@ -13,8 +13,6 @@
         <module>BESOP-jpa</module>
         <module>BESOP-utils</module>
         <module>BESOP-web</module>
-		
-		
     </modules>
 
     <properties>
