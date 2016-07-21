@@ -1,0 +1,346 @@
+/* Hoja de estilos que contiene adecuaciones para los elementos de bootstrap y primefaces */
+
+/* Ajusta el tamaño de las graficas del tablero de requisiciones */
+.grafica-tablero-requisiciones{
+	height: 265px;
+}
+
+/* Permite generar texto vertical */
+.texto-vertical{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* Permite generar texto vertical y subrayado */
+.texto-vertical-subrayado{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform: rotate(180deg);
+    text-decoration: underline !important;
+}
+
+/*Permite mostrar el texto de la leyenda de la grafica de pendientes por modalidad
+del tablero de requisiciones*/
+.contenedorLeyendaTablaReq{
+	display: inline-block;
+}
+
+/*Muestra un cuadro de color azul para el tablero de requisiciones*/
+.cuadroColorAzulTableroReq{
+	border-color: rgb(90, 155, 213);
+	background-color: rgb(90, 155, 213);
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+
+/*Muestra un cuadro de color naranja para el tablero de requisiciones*/
+.cuadroColorNaranjaTableroReq{
+	border-color: rgb(237, 126, 49);
+	background-color: rgb(237, 126, 49);
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+
+/*Muestra un cuadro de color gris para el tablero de requisiciones*/
+.cuadroColorGrisTableroReq{
+	border-color: rgb(165, 165, 165);
+	background-color: rgb(165, 165, 165);
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+
+/*Muestra un cuadro de color amarillo para el tablero de requisiciones*/
+.cuadroColorAmarilloTableroReq{
+	border-color: rgb(255, 192, 0);
+	background-color: rgb(255, 192, 0);
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+
+/*Permite mostrar el texto de la leyenda de la grafica de pendientes por programa
+del tablero de pendientes*/
+#contenedorLeyendaTablaProgramas{
+	display: inline-block;
+}
+
+/*Muestra un cuadro de color rosa en la tabla de ofertas pendientes por programa
+del tablero de pendientes*/
+#cuadroColorTableroPendientes{
+	border-color: rgb(241, 182, 167);
+	background-color: rgb(241, 182, 167);
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+
+/*Estandarizacion de estilo de la tabla de estatus tablero*/
+.tablaEstatusTablero{
+	font-weight: normal; 
+	text-decoration: underline; 
+	cursor: pointer;
+}
+
+/*Estandarizacion de estilo de la tabla de estatus tablero*/
+.tablaEstatusTableroDesactivado{
+	font-weight: normal; 
+	text-decoration: underline; 
+}
+
+.textoTableroEstatusTablero{
+	text-align: center; 
+	font-size: 1.0em;
+}
+
+/*Estandarizacion de estilo de la tabla ofertas por programa tablero*/
+.tablaProgramaTablero{
+	text-align: center; 
+	font-size: 1.0em;
+}
+
+/*Heredar el largo del padre contenedor de la tabla*/
+.ui-datatable-tablewrapper{
+	height: inherit;
+}
+
+.ui-inputfield {
+	font-weight: normal !important;
+}
+
+/*Centrar horizontalmente el mensaje de espere en peticiones AJAX*/
+#pageBlock_content{
+	margin: auto;
+}
+
+/*Adecuar las fuentes y tamaños al estandar de diseño*/
+.ui-widget{
+	font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+
+/*Adecuar las fuentes y tamaños al estandar de diseño*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*Adecuar las fuentes y tamaños al estandar de diseño para el calendario*/
+.ui-datepicker .ui-datepicker-title {
+    font-size: 13px;
+}
+
+.calendar input {
+	width: 100%;
+	height: 34px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+@media (min-width: 768px) {
+	.offer-info-label {
+		text-align: right;
+	}
+}
+
+@media (max-width: 767px) {
+	.offer-info-label {
+		margin-left: 15px;
+	}
+	.offer-info-detail {
+		margin-left: 15px;
+	}
+}
+
+.origin-button>.ui-button-text {
+	padding: 0 !important;
+}
+
+.ui-layout, .ui-layout-unit{
+	-moz-scrollbars-none;
+	border:none;
+	overflow-x:hidden;
+}
+.panelNoBorder, .panelNoBorder tr, .panelNoBorder td{
+border: hidden;
+border-color: white;
+text-align: right;
+}
+.panelnoOverFlow{
+	-moz-scrollbars-none;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+.texttoleft{
+	text-align: left;
+}
+.texttoright{
+	text-align: right;
+}
+
+
+/* Estas clases son para modificar los botones de radios de Primefaces*/
+.radioButton {
+	margin-top:3px; 
+	width:100%;
+	font-weight: normal;
+    font-size: 22px;
+	
+}
+.radioButton .ui-radiobutton-box {
+	width: 19px !important;
+	height: 19px !important;
+	border: 1px solid #ddd !important;
+	background: #fff !important;
+	font-weight: normal;
+    font-size: 22px;
+}
+.radioButton .ui-state-active{
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+	background: #f5f5f5 !important;
+	font-weight: normal;
+    font-size: 22px;
+	border: 1px solid #ddd !important;
+}
+
+/*contiene variaciones para bootstrap, primefaces y elementos normales de HTML*/
+/*Inicio de clases utilizadas por Daniel Fuentes para uso de JSFs*/
+.showdiv, .showdiv div{
+	padding: 10px;
+}
+
+.conpadding [class*="col-"] {
+    padding-left: 10px;
+}
+.conborder [class*="col-"] {
+    text-align: left;
+}
+.btnbottomright [class*="col-"] {
+    text-align: right;
+}
+.halfbox [class*="col-"] {
+    width: 50%;
+}
+.conpaddingtoleft [class*="col-"] {
+    padding-left: 10px;
+    text-align:left;
+}
+/*Fin de clases*/
+
+
+
+
+/*
+ * Sobreescribe el diseño de primefaces por defecto para el componente BreadCrumb.  
+ */
+ .ui-breadcrumb {
+	background-color: #eef5dd;
+    border-color: #dddddd;
+}
+
+/*
+ *
+ * Sobreescribe el diseño de primefaces por defecto para el componente TimePicket.  
+ *
+ */
+
+.ui-timepicker-table tbody tr td.ui-timepicker-hours td.ui-timepicker-hour-cell a,
+.ui-timepicker-table tbody tr td.ui-timepicker-minutes td.ui-timepicker-minute-cell a{
+	width: 25px;
+}
+
+
+/*
+ *
+ * Sobreescribe el diseño de los enlaces para la plantilla publica
+ *
+ */
+a.enlacesPublicos:link {
+	color:  #96bf25;
+}
+
+a.enlacesPublicos:visited { 
+    color: #96bf25;	
+}
+
+a.enlacesPublicos:hover { 
+    color: #C0E263;	
+}
+
+.btn-hide{
+	display:block;
+	height: 19px;
+}
+
+.autoComplete{
+	width: 100% !important;
+}
+.autoComplete input{
+	width: 100%;
+	height: 34px;
+}
+.oneRadioPrime table{
+	width: 37% !important;
+}
+.checkBoxVertical td{
+	display: block !important;
+}
+.dataTable table{
+	width: 100% !important;
+}
+
+.dataTable .ui-sortable-column{
+	width: 180px !important;
+}
+.table-responsive .ui-datatable-tablewrapper{
+	border: 1px solid #ccc;
+}
+
+.ui-wizard-navbar .ui-icon{
+	background-image: none !important;
+}
+
+.ui-wizard-navbar .ui-state-hover{
+	color: #333 !important;
+  background-color: #e6e6e6 !important;
+  border-color: #adadad !important;
+  box-shadow:none !important;
+}
+
+.ui-wizard-navbar .ui-button{
+	 display: inline-block;
+  padding: 7px 12px !important;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 4px;
+  color: #333;
+  border-color: #000;
+ width: 31%;	
+}
+
+.noBorderContent .ui-widget-content{
+	border: none !important;
+}

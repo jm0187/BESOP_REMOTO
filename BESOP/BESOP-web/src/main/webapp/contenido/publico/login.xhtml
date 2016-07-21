@@ -1,0 +1,106 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/WEB-INF/templates/basePublicTemplate.xhtml">
+	<ui:define name="pageTitle"><h:outputText value="#{msg['login.producto.titulo']}" /></ui:define>
+
+	<ui:define name="pageHeadExtra">
+		<h:outputStylesheet library="css" name="login.css" />
+	</ui:define>
+
+	<ui:define name="sectionContent">
+
+		<h:form id="formLoginId" prependId="false" styleClass="form-signin"
+			role="form">
+
+			<p:focus context="formLoginId" />
+
+			<!-- Formulario con los filtros de la busqueda -->
+			<h:panelGroup styleClass="panel panel-default" layout="block">
+				<h:panelGroup styleClass="panel-heading" layout="block">
+					<h:outputText id="lblCabecera" value="#{msg['login.cabecera']}" />
+				</h:panelGroup>
+				<h:panelGroup styleClass="panel-body" layout="block">
+					<h:panelGroup styleClass="row" layout="block">
+						<h:panelGroup styleClass="col-md-12" layout="block">
+							<h:panelGroup styleClass="form-group" layout="block">
+							
+								<h:outputText id="lblUsername" value="#{msg['login.usuario']}" />
+
+								<p:inputText id="username" 
+										styleClass="form-control"
+									    value="#{loginMB.user}" 
+									    required="true" 
+										requiredMessage="#{msg['login.usuario.mensaje']}" 
+										validatorMessage="#{msg['login.correo.validacion']}"
+										onkeyup="validarNumeroCaracteres(this, 65);">
+										
+									<f:validateRegex
+										pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{1,})$" />
+										
+								</p:inputText>
+							</h:panelGroup>
+						</h:panelGroup>
+
+						<h:panelGroup styleClass="col-md-12" layout="block">
+							<h:panelGroup styleClass="form-group" layout="block">
+								<h:outputText id="lblPassword" value="#{msg['login.contrasena']}" />
+									
+								<p:password id="password" 
+											styleClass="form-control"
+											value="#{loginMB.pass}"  
+											required="false"  
+											requiredMessage="#{msg['login.contrasena.mensaje']}" >
+								</p:password>
+								
+							</h:panelGroup>
+						</h:panelGroup>
+
+						<h:panelGroup styleClass="col-md-12" layout="block">
+							<h:panelGroup styleClass="form-group" layout="block">
+								<h:panelGroup styleClass="col-md-3" layout="block" />
+
+								<h:panelGroup styleClass="col-md-6" layout="block">
+									<p:commandButton value="#{msg['login.ingresar']}" action="#{loginMB.login}"
+										styleClass="btn btn-success btn-block" ajax="false" update="@form msgs" />
+								</h:panelGroup>
+
+								<h:panelGroup styleClass="col-md-3" layout="block">
+								</h:panelGroup>
+							</h:panelGroup>
+						</h:panelGroup>
+
+
+						<h:panelGroup styleClass="col-md-12" layout="block">
+							<h:panelGroup styleClass="form-group" layout="block">
+								#{sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
+								<p:messages id="msgs" showDetail="true" autoUpdate="true"
+									showSummary="false" closable="false" />
+							</h:panelGroup>
+						</h:panelGroup>
+
+						<h:panelGroup styleClass="col-md-12" layout="block"
+							style="background-color: #f5f5f5; text-align:center;">
+							
+							<h:panelGroup styleClass="form-group" layout="block">
+								<h:panelGroup styleClass="col-md-12" layout="block">
+									<h:outputText value="&lt;br/&gt;" escape="false" />
+			
+									<h:outputLink value="recuperar.jsf"  styleClass="enlacesPublicos">
+												<h:outputText value="#{msg['login.recuperar']}" />
+									</h:outputLink>
+												
+									<h:outputText value="&lt;br/&gt;&lt;br/&gt;" escape="false" />									
+								</h:panelGroup>
+							</h:panelGroup>
+							
+						</h:panelGroup>
+
+					</h:panelGroup>
+				</h:panelGroup>
+			</h:panelGroup>
+		</h:form>
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+	<application>
+<!-- 		<message-bundle>resources.application</message-bundle> -->
+		
+		<!-- Resource usado para la validación de campos por medio de expresiones regulares -->
+		<resource-bundle>
+			<base-name>i18n.regex</base-name>
+			<var>regex</var>
+		</resource-bundle>
+		
+		<!-- Resource utilizado para los mensajes del Template para gestión de programas -->
+		<resource-bundle>
+                    <base-name>i18n.application</base-name>
+                    <var>msg</var>
+                </resource-bundle>
+		
+		<locale-config>
+			<default-locale>es-MX</default-locale>
+			<supported-locale>es-MX</supported-locale>
+		</locale-config>
+		
+	</application>
+        
+        <lifecycle>
+            <phase-listener>mx.gob.sfp.besop.controller.LoginMB</phase-listener>
+        </lifecycle>
+
+</faces-config>

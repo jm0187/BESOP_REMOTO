@@ -1,0 +1,28 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+
+	<div id="myNav" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+		<ul class="nav nav-pills nav-stacked nav-container">
+			
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" 
+					href="#{request.contextPath}/content/showcase/bloques/bloques.jsf">
+					Catalogos<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#{request.contextPath}/contenido/privado/admin/tramites.jsf">Tramites</a></li>
+					<li><a href="#{request.contextPath}/contenido/privado/tramites/relacionPago/relacionpagos.jsf">Relación de pagos</a></li>
+					<li><a href="#{request.contextPath}/contenido/privado/tramites/listaAsistenciaDestino/tramiteListaAsistenciaDestino.jsf">Lista Asistencia Destino</a></li>
+					<li><a href="#{request.contextPath}/contenido/privado/bandejas/bandejaOfertas.jsf">Bandeja Ofertas</a></li>
+										
+				</ul>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<!--/.sidebar-offcanvas-->
+</ui:composition>

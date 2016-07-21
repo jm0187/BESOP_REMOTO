@@ -1,0 +1,99 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    					http://www.springframework.org/schema/security 
+    					http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+
+	<http auto-config="false" use-expressions="true">
+
+		<intercept-url pattern="/*" access="isAuthenticated()" />
+		<intercept-url pattern="/contenido/*" access="isAuthenticated()" />
+		<intercept-url pattern="/contenido/privado/*" access="isAuthenticated()" />
+		<intercept-url pattern="/contenido/privado/**" access="isAuthenticated()" />
+
+		<intercept-url pattern="/contenido/publico/*" access="permitAll" />
+		<intercept-url pattern="/contenido/publico/**" access="permitAll" />
+		<intercept-url pattern="/resources/**" access="permitAll" />
+
+
+		<form-login login-page="/contenido/publico/login.jsf"
+			default-target-url="/contenido/privado/home.jsf"
+			always-use-default-target="true" authentication-failure-url="/contenido/publico/login.jsf?error"
+			username-parameter="username" password-parameter="password" />
+
+		<logout logout-url="/logout" invalidate-session="true"
+			delete-cookies="true" success-handler-ref="logoutSuccessHandler" />
+
+		<!-- Configuración del número de sesiones concurrentes permitidas al por 
+			usuario -->
+		<session-management>
+			<concurrency-control max-sessions="1" />
+		</session-management>
+
+		<!-- Deshabilita proteccion csrf -->
+		<csrf disabled="true" />
+
+	</http>
+	
+	
+
+	<beans:bean id="logoutSuccessHandler"
+		class="mx.gob.sfp.besop.support.security.LogoutSuccessHandler">
+	</beans:bean>
+
+<!-- 	<global-method-security pre-post-annotations="enabled" /> -->
+
+	<!-- Provider -->
+<!-- 	<authentication-manager> -->
+<!-- 		<authentication-provider ref="customAuthenticationProvider" /> -->
+<!-- 	</authentication-manager> -->
+
+
+<!-- 	<beans:bean id="customAuthenticationProvider" -->
+<!-- 		class="mx.gob.sfp.besop.support.security.CustomAuthenticationProvider"> -->
+<!-- 		<beans:property name="usuarioService" ref="usuarioService" /> -->
+<!-- 	</beans:bean> -->
+
+	<!-- Fuente de mensajes -->
+	<beans:bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<beans:property name="basenames">
+			<beans:list>
+				<beans:value>i18n/auth_message</beans:value>
+			</beans:list>
+		</beans:property>
+	</beans:bean>
+
+	<authentication-manager>
+		<authentication-provider ref="customAuthenticationProvider">
+		</authentication-provider>
+	</authentication-manager>
+
+	<beans:bean id="customUserDetailsService"
+		class="mx.gob.sfp.besop.support.security.CustomUserDetailsService">
+	</beans:bean>
+	<beans:bean id="customAuthenticationProvider"
+		class="mx.gob.sfp.besop.support.security.CustomAuthenticationProvider">
+	</beans:bean>
+
+
+<!-- 	<beans:bean -->
+<!-- 		class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"> -->
+<!-- 		<beans:property name="alwaysUseJndiLookup" value="true" /> -->
+<!-- 	</beans:bean> -->
+
+<!-- 	<beans:bean id="usuarioService" -->
+<!-- 		class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"> -->
+
+<!-- 		<beans:property name="jndiName" -->
+<!-- 			value="ejb.UsuarioServiceImpl#mx.gob.sfp.besop.service.UsuarioService" /> -->
+
+<!-- 		<beans:property name="businessInterface" -->
+<!-- 			value="mx.gob.sfp.besop.service.UsuarioService" /> -->
+
+<!-- 		<beans:property name="resourceRef" value="true" /> -->
+<!-- 	</beans:bean> -->
+</beans:beans>

@@ -1,0 +1,216 @@
+.ui-fileupload-simple {
+	height: 40px;
+    padding: 0px !important;
+    margin: 0px;
+}
+
+.ui-button-text-icon-left {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0.5em 0.1em !important;
+}
+
+.fileinput-button {
+	background: #c9c8c6 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0))) !important;
+	background: #c9c8c6 -ms-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important;
+	background: #c9c8c6 -moz-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important;
+	background: #c9c8c6 -o-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important; /* For Opera 11.1 to 12.0 */
+	background: #c9c8c6 linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) !important;
+    border-color: #666 !important;
+    color: #333 !important;
+}
+
+.ui-state-hover {
+	background-color:#e7e6e5 !important;
+}
+
+.mensajeRequerido {
+	color: #b92025;
+}
+
+.blackHr {
+	color: #9C9C9C;
+	background-color: #9C9C9C;
+	border-color: #9C9C9C;
+}
+
+.tableroCandidatosModalText {
+	text-align: left;
+}
+
+.tableroCandidatosLinkFormatedText {
+	font-weight: normal; 
+	text-decoration: underline; 
+	cursor: pointer; 
+	color: blue;
+}
+
+body.int {
+	background-image: url("/STPSGestionProgramas-web/javax.faces.resource/images/gestion_programas.png.jsf"), -moz-linear-gradient(#ffffff, #F0F0F0);
+	background-image: url("/STPSGestionProgramas-web/javax.faces.resource/images/gestion_programas.png.jsf"), -ms-linear-gradient(#ffffff, #F0F0F0);
+	background-image: url("/STPSGestionProgramas-web/javax.faces.resource/images/gestion_programas.png.jsf"), -webkit-linear-gradient(#ffffff, #F0F0F0);
+	background-image: url("/STPSGestionProgramas-web/javax.faces.resource/images/gestion_programas.png.jsf"), -o-linear-gradient(#ffffff, #F0F0F0);
+	background-image: url("/STPSGestionProgramas-web/javax.faces.resource/images/gestion_programas.png.jsf"), linear-gradient(#ffffff, #F0F0F0);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.navbar-default {
+	background-color: -moz-linear-gradient(to top, blue, red);
+    background-image: url("/STPSGestionProgramas-web/javax.faces.resource/images/fondo_nav.png.jsf");
+    background-repeat: repeat-x;
+    background-color: #ffffff !important;
+    border-color: transparent;
+    
+}
+ 
+.brand-title strong {
+    color: transparent !important;
+    display: block;
+    height: 64px;
+}
+
+h2,.h2, h3,.h3, h4,.h4, h5,.h5 {
+    color: #7a7777 ;
+    font-family: tahoma;
+    font-weight: lighter;
+}
+.panel-default > .panel-heading {
+    background-color: #eef5dd;
+    color: #6c6761;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #96bf25;
+    color: #333;
+}
+
+.ui-widget-header {
+	/*background-color: #FFE5D2;*/
+    color: #333;
+    background: #ffe5d2 -ms-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #ffe5d2 -moz-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #ffe5d2 -webkit-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0; /* For Safari 5.1 to 6.0 */
+	background: #ffe5d2 -o-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0; /* For Opera 11.1 to 12.0 */
+	background: #ffe5d2 linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+.form-control{
+	background: #ffffff !important;
+	
+}
+
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield{
+	background: #ffffff !important;
+}
+
+/*.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default*/
+.ui-datatable thead th, .ui-datatable tfoot th {
+	background: #ffe5d2 -ms-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #ffe5d2 -moz-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #ffe5d2 -webkit-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0; /* For Safari 5.1 to 6.0 */
+	background: #ffe5d2 -o-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0; /* For Opera 11.1 to 12.0 */
+	background: #ffe5d2 linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	
+}
+
+.ui-datepicker .ui-datepicker-header{
+	background-color: #C0E263;
+    color: #333;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-default{
+	background: rgba(238, 239, 235, 1) none repeat scroll 0 0;
+}
+
+.input-group-addon{
+	background: #e3e3e3 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+	background: #e3e3e3 -ms-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #e3e3e3 -moz-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #e3e3e3 -o-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0; /* For Opera 11.1 to 12.0 */
+	background: #e3e3e3 linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	background-color: #BAD475;
+}
+
+.btn-default {
+    background: #c9c8c6 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0))) !important;
+	background: #c9c8c6 -ms-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important;
+	background: #c9c8c6 -moz-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important;
+	background: #c9c8c6 -o-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important; /* For Opera 11.1 to 12.0 */
+	background: #c9c8c6 linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) !important;
+    border-color: #666 !important;
+    color: #333 !important;
+}
+
+.btn-default:hover {
+ 	background-color:#e7e6e5 !important;;
+}
+
+.btn-default:active {
+ 	position:relative;
+ 	top:1px;
+}
+
+.btn-default.disabled, .btn-default[disabled], 
+fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, 
+fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, 
+fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default.focus[disabled], 
+fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, 
+fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default.active[disabled], 
+fieldset[disabled] .btn-default.active{
+	background: #c9c8c6 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+	background: #c9c8c6 -ms-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #c9c8c6 -moz-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #c9c8c6 -o-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0; /* For Opera 11.1 to 12.0 */
+	background: #c9c8c6 linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    border-color: #666;
+    color: #333;
+}
+
+.btn-success {
+	background: #bad475 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0))) !important;
+	background: #bad475 -ms-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important;
+	background: #bad475 -moz-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important;
+	background: #bad475 -o-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0 !important; /* For Opera 11.1 to 12.0 */
+	background: #bad475 linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) !important;
+    border-color: #69744c !important;
+    color: #000 !important;
+}
+.btn-success:hover {
+ 	background-color:#e5faaf !important;
+}
+
+.btn-success:active {
+	position:relative;
+ 	top:1px;
+}
+
+.btn-success.disabled, .btn-success[disabled], 
+fieldset[disabled] .btn-success, .btn-success.disabled:hover, .btn-success[disabled]:hover, 
+fieldset[disabled] .btn-success:hover, .btn-success.disabled:focus, .btn-success[disabled]:focus, 
+fieldset[disabled] .btn-success:focus, .btn-success.disabled.focus, .btn-success.focus[disabled], 
+fieldset[disabled] .btn-success.focus, .btn-success.disabled:active, .btn-success[disabled]:active, 
+fieldset[disabled] .btn-success:active, .btn-success.disabled.active, .btn-success.active[disabled], 
+fieldset[disabled] .btn-success.active{
+	background: #bad475 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+	background: #bad475 -ms-linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #bad475 -moz-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+	background: #bad475 -o-linear-gradient(center top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) repeat scroll 0 0; /* For Opera 11.1 to 12.0 */
+	background: #bad475 linear-gradient(top , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    border-color: #69744c;
+    color: #000 !important;
+}
+
+.iconoTableroBienvenida{
+    font-size: 40px;
+    text-align: center;
+}
+
+.navegador ul ul {
+    display: none;
+}
+
+.navegador ul li:hover > ul {
+    display: block;
+}

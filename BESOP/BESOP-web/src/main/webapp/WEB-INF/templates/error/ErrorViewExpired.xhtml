@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script type="text/javascript">
+		function getContextPath() {
+			var context = window.location.pathname.substring(0, window.location.pathname.indexOf("/",2));
+			//alert("context: " + context);
+			var url = context + "/contenido/publico/login.jsf";
+			//alert("URL: " + url);
+			//window.location = url;
+			
+			setTimeout(function(){ location.href= url }, 500);
+		}
+	</script>
+</head>
+
+<body onLoad="getContextPath();">
+	
+	<form>
+		<h1 style="display:flex;justify-content:center;	align-items:center;">La vista ha expirado, se enviara a la pagina de inicio...</h1>
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* Pretty printing styles. Used with prettify.js.
+ *
+ * This version is slight modified based on the original version.
+ *
+ * Name:	Stanley Ng
+ * Email: 	stanleyhlng@googlegroups.com
+ * 
+ * Reference:
+ * http://code.google.com/p/google-code-prettify/source/browse/trunk/src/prettify.css
+ */
+.pln {
+	color: #48484C;
+}
+
+.str {
+	color: #DD1144;
+}
+
+.kwd {
+	color: #1E347B;
+}
+
+.com {
+	color: #93A1A1;
+}
+
+.typ {
+	color: teal;
+}
+
+.lit {
+	color: #195F91;
+}
+
+.pun {
+	color: #93A1A1;
+}
+
+.opn {
+	color: #93A1A1;
+}
+
+.clo {
+	color: #93A1A1;
+}
+
+.tag {
+	color: #008;
+}
+
+.atn {
+	color: teal;
+}
+
+.atv {
+	color: #DD1144;
+}
+
+.dec {
+	color: teal;
+}
+
+.var {
+	color: teal;
+}
+
+.fun {
+	color: #DC322F;
+}
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint {
+	background-color: #F7F7F9;
+	padding: 10px;
+	border: 1px solid #E1E1E8;
+}
+
+pre.prettyprint.linenums {
+	box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+	color: #1E347B;
+	margin: 0 0 0 40px;
+}
+
+ol.linenums li {
+	color: #BEBEC5;
+	line-height: 18px;
+	padding-left: 12px;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+	list-style-type: normal;
+}
+
+/* Alternate shading for lines */
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+	background: #eee;
+}
+/* clase para la visualizacion de las clases col-**-** */
+.reticula {
+	text-align: center;
+}
+
+.reticula span {
+	display: block;
+	background: #f9f9f9;
+	padding: 5px;
+	margin: 2px;
+	width: 100%;
+}
+
+.bs-callout {
+	padding: 10px 15px;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px
+}
+
+.bs-callout-info {
+	border-left-color: #1b809e;
+}
+
+.bs-callout-info h4 {
+	color: #1b809e;
+}
+
+.bs-callout h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.bs-callout-intro {
+	border-left-color: #5cb85c;
+}
+
+.bs-callout-intro h4 {
+	color: #5cb85c;
+}
+
+.footerExample {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+.footerExample p {
+	text-align: center;
+}
+
+.affix {
+	width: 20.4%;
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -50px;
+	visibility: hidden;
+}
+
+.bs-table th small, .responsive-utilities th small {
+	display: block;
+	font-weight: 400;
+	color: #999
+}
+
+.responsive-utilities tbody th {
+	font-weight: 400
+}
+
+.responsive-utilities td {
+	text-align: center
+}
+
+.responsive-utilities td.is-visible {
+	color: #468847;
+	background-color: #dff0d8 !important
+}
+
+.responsive-utilities td.is-hidden {
+	color: #ccc;
+	background-color: #f9f9f9 !important
+}
+
+.responsive-utilities-test {
+	margin-top: 5px
+}
+
+.responsive-utilities-test .col-xs-6 {
+	margin-bottom: 10px
+}
+
+.responsive-utilities-test span {
+	display: block;
+	padding: 15px 10px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.1;
+	text-align: center;
+	border-radius: 4px
+}
+
+@media ( max-width : 767px) {
+	h3 {
+		color: orange;
+	}
+	.mQuery:after {
+		content: "  (max-width: 767px)";
+	}
+	.cont:after {
+		color: orange;
+		content: " auto";
+	}
+}
+
+@media ( min-width : 768px) and (max-width: 991px) {
+	h3 {
+		color: blue;
+	}
+	.mQuery:after {
+		content: "  (min-width: 768px) and (max-width: 991px)";
+	}
+	.cont:after {
+		color: blue;
+		content: " 750px";
+	}
+}
+
+@media ( min-width : 992px) and (max-width: 1199px) {
+	h3 {
+		color: fuchsia;
+	}
+	.mQuery:after {
+		content: " (min-width: 992px) and (max-width: 1199px)";
+	}
+	.cont:after {
+		color: fuchsia;
+		content: " 970px";
+	}
+}
+
+@media ( min-width : 1200px) {
+	h3 {
+		color: green;
+	}
+	.mQuery:after {
+		content: " (min-width: 1200px)";
+	}
+	.cont:after {
+		color: green;
+		content: " 1170px";
+	}
+}

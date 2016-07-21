@@ -1,0 +1,127 @@
+/* Hoja de estilos que contiene variaciones para bootstrap, primefaces y elementos normales de HTML*/
+
+/*Heredar el largo del padre contenedor de la tabla*/
+.ui-datatable-tablewrapper{
+	height: inherit;
+}
+
+.ui-inputfield {
+	font-weight: normal !important;
+}
+
+/*Centrar horizontalmente el mensaje de espere en peticiones AJAX*/
+#pageBlock_content{
+	margin: auto;
+}
+
+/*Adecuar las fuentes y tamaños al estandar de diseño*/
+.ui-widget{
+	font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+
+/*Adecuar las fuentes y tamaños al estandar de diseño*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*Adecuar las fuentes y tamaños al estandar de diseño para el calendario*/
+.ui-datepicker .ui-datepicker-title {
+    font-size: 13px;
+}
+
+.calendar input {
+	width: 100%;
+	height: 34px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+@media (min-width: 768px) {
+	.offer-info-label {
+		text-align: right;
+	}
+}
+
+@media (max-width: 767px) {
+	.offer-info-label {
+		margin-left: 15px;
+	}
+	.offer-info-detail {
+		margin-left: 15px;
+	}
+}
+
+.origin-button>.ui-button-text {
+	padding: 0 !important;
+}
+
+.ui-layout, .ui-layout-unit{
+	-moz-scrollbars-none;
+	border:none;
+	overflow-x:hidden;
+}
+.panelNoBorder, .panelNoBorder tr, .panelNoBorder td{
+border: hidden;
+border-color: white;
+text-align: right;
+}
+.panelnoOverFlow{
+	-moz-scrollbars-none;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+.texttoleft{
+	text-align: left;
+}
+.texttoright{
+	text-align: right;
+}
+
+
+/* Estas clases son para modificar los botones de radios de Primefaces*/
+.radioButton {
+	margin-top:3px; 
+	width:100%;
+	font-weight: normal;
+    font-size: 22px;
+	
+}
+.radioButton .ui-radiobutton-box {
+	width: 19px !important;
+	height: 19px !important;
+	border: 1px solid #ddd !important;
+	background: #fff !important;
+	font-weight: normal;
+    font-size: 22px;
+}
+.radioButton .ui-state-active{
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+	background: #f5f5f5 !important;
+	font-weight: normal;
+    font-size: 22px;
+	border: 1px solid #ddd !important;
+}
+.showdiv, .showdiv div{
+	padding: 10px;
+}
+
+.conpadding [class*="col-"] {
+    padding-left: 10px;
+    border: 1px red dashed;
+}
+.conborder [class*="col-"] {
+   border: 1px #DDDDDD solid;
+    text-align: left;
+}
+.btnbottomright [class*="col-"] {
+   border: 1px #DDDDDD solid;
+    text-align: right;
+}
+.halfbox [class*="col-"] {
+   border: 1px #DDDDDD solid;
+    width: 50%;
+}

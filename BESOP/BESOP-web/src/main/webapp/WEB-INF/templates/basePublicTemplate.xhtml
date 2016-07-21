@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<f:view contentType="text/html" encoding="UTF-8">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title><h:outputText value="#{msg['template.head.title']}"/> | <ui:insert name="pageTitle"></ui:insert></title>
+		<h:outputStylesheet library="bootstrap" name="css/bootstrap.css" />
+ 		<h:outputStylesheet library="css" name="layout.css" />
+ 		<h:outputStylesheet library="css" name="customization.css" />
+ 		<h:outputStylesheet library="css" name="body.css" />
+ 				
+		<h:outputText escape="false" value="
+			&lt;!--[if lt IE 9]&gt;
+      			&lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;
+      			&lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;
+    		&lt;![endif]--&gt;
+    		">
+		</h:outputText>
+
+		<ui:insert name="pageHeadExtra" />
+	</h:head>
+
+	<h:body styleClass="int">
+
+		<ui:insert name="branding">
+			<ui:include src="/WEB-INF/templates/sections/publicBranding.xhtml" />
+		</ui:insert>
+
+		<div class="container">				
+			<div class="row">
+					<div class="col-xs-12">
+						<br/><br/><br/><br/>
+					</div>
+					
+					<div class="col-xs-12">
+						<ui:insert name="sectionContent"></ui:insert>
+					</div>
+			</div>
+		</div>
+		
+		<ui:insert name="footer">
+			<ui:include src="/WEB-INF/templates/sections/publicFooter.xhtml" />
+		</ui:insert>
+
+		<ui:include src="/WEB-INF/components/AjaxStatus.xhtml"/>
+		<h:outputScript library="bootstrap" name="js/bootstrap.js" />
+		<h:outputScript library="javascript" name="template.js" />
+		
+		
+		<ui:insert name="sectionScriptExtra">
+			<!-- Seccion para agregar scripts y queden al final de la pagina para conservar un estandar ademas de cumplir con 
+			mejores practicas para el performance de una pagina html -->
+			<h:outputScript library="javascript" name="primefacesTranslations.js"/>
+			
+						
+			<h:outputScript library="javascript" name="login.js" />
+			<!-- Usar este define para declarar dialogos o cosas que no interactuan muy bien con el p:layout -->
+		</ui:insert>
+	</h:body>
+</f:view>
+</html>
